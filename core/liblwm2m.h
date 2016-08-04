@@ -379,8 +379,8 @@ typedef uint8_t (*lwm2m_delete_callback_t) (uint16_t instanceId, lwm2m_object_t 
 
 struct _lwm2m_object_t
 {
-    struct _lwm2m_object_t * next;           // for internal use only.
     uint16_t       objID;
+    struct _lwm2m_object_t * next;           // for internal use only.
     lwm2m_list_t * instanceList;
     lwm2m_read_callback_t     readFunc;
     lwm2m_write_callback_t    writeFunc;
