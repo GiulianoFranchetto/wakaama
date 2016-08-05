@@ -2,14 +2,10 @@
 # Add LWM2M_WITH_LOGS to compile definitions to enable logging.
 # Set LWM2M_LITTLE_ENDIAN to FALSE or TRUE according to your destination platform or leave
 # it unset to determine endianess automatically.
-
 set(WAKAAMA_SOURCES_DIR ${CMAKE_CURRENT_LIST_DIR})
 
 set(EXT_SOURCES 
     ${WAKAAMA_SOURCES_DIR}/er-coap-13/er-coap-13.c)
-
-set(CORE_HEADERS
-    ${WAKAAMA_SOURCES_DIR}/liblwm2m.h)
 
 set(WAKAAMA_SOURCES
     ${WAKAAMA_SOURCES_DIR}/liblwm2m.c
