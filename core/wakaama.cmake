@@ -46,3 +46,4 @@ if (LWM2M_LITTLE_ENDIAN)
 endif()
 
 add_library(wakaama SHARED ${WAKAAMA_SOURCES})
+install(TARGETS wakaama LIBRARY DESTINATION "lib")
